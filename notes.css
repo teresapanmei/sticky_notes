@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial;
+    font-size: 16px;
+    margin: 16px;
+    background: #666;
+    color: #fff;
+}
+
+h2,
+p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+ul {
+    overflow: hidden;
+    padding: 48px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    background: #FFC;
+    display: block;
+    height: 160px;
+    width: 160px;
+    padding: 16px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    transition: transform.15s linear;
+}
+
+ul li {
+    margin: 16px;
+    float: left;
+}
+
+ul li h2 {
+    font-size: 140%;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+ul li p {
+    font-family: cursive;
+    font-size: 180%;
+}
+
+ul li a {
+    transform: rotate(-6deg);
+}
+
+ul li:nth-child(even) a {
+    transform: rotate(4deg);
+    position: relative;
+    top: 5px;
+    background: #cfc;
+}
+
+ul li:nth-child(3n) a {
+    transform: rotate(-3deg);
+    position: relative;
+    top: -5px;
+    background: #ccf;
+}
+
+ul l:nth-child(5n)a {
+    transform: rotate (5deg);
+    position: relative;
+    top: -10px;
+}
+
+ul li a:hover,
+ul li a:focus {
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    transform: scale (1.25);
+    position: relative;
+    z-index: 5;
+}
